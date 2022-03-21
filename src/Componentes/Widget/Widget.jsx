@@ -1,13 +1,13 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Widget() {
   return (
-    <>
-      <img
-        src="https://img.icons8.com/external-justicon-lineal-justicon/30/000000/external-shopping-bag-valentines-day-justicon-lineal-justicon.png "
-        alt="bolsa de compras"
-      />
-    </>
+    <button>
+      <i className="bi bi-cart3"></i>
+    </button>
   );
 }
+
 export default Widget;
