@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Item from "./Item/Item";
 
 export default function ItemList(props) {

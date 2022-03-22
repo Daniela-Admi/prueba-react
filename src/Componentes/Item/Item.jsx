@@ -1,8 +1,8 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 function Item({ prod }) {
   return (
-    <Link to={`detalle/${prod.id}`}>
+    <Link to={`/detalle/${prod.id}`}>
       <div
         // key={prod.id}
         className="col-md-4"
@@ -17,8 +17,8 @@ function Item({ prod }) {
           </div>
           <div className="card-footer">
             {/* <button className="btn btn-outline-primary btn-block">
-                                detalle del producto
-                            </button>                 */}
+                              detalle del producto
+                          </button>                 */}
           </div>
         </div>
       </div>

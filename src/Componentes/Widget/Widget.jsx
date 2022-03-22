@@ -1,12 +1,15 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Widget() {
   return (
-    <button>
-      <i className="bi bi-cart3"></i>
-    </button>
+    <>
+      <Button variant="outline-dark">
+        <i className="bi bi-cart3"></i>
+      </Button>
+    </>
   );
 }
 
