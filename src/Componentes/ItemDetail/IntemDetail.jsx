@@ -1,14 +1,15 @@
 import React from "react";
 
-function ItemDetail({ producto }) {
+const ItemDetail = ({ prodDetail }) => {
+  const { foto, name, price, categoria } = prodDetail;
   return (
     <div>
-      <h3>Item Detalles</h3>
-      <img src={producto.foto} alt="imagen del producto" />
-      <p>{producto.name}</p>
-      <p>{producto.price}</p>
-      <p>{producto.categoria}</p>
+      <h3>Detalles del Producto</h3>
+      <img src={foto} alt="imagen del producto" />
+      <p>{name}</p>
+      <p>{price}</p>
+      <p>{categoria}</p>
     </div>
   );
-}
+};
 export default ItemDetail;
