@@ -1,16 +1,15 @@
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-const ItemCount = ({ initial = "1", stock = "5", onAdd }) => {
-  const [count, setCount] = useState(1);
+const ItemCount = ({ initial, stock, onAdd }) => {
+  const [count, setCount] = useState(initial);
 
   const sumar = () => {
-    if (initial < stock) {
+    if (count < stock) {
       setCount(count + 1);
     }
   };
   const restar = () => {
-    if (count > 1) {
+    if (count > 0) {
       setCount(count - 1);
     }
   };

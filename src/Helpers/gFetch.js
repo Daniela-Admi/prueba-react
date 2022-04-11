@@ -4,6 +4,7 @@ const productos = [
     categoria: "Collar",
     name: "Boho",
     price: 230,
+    stock: 12,
     foto: "https://i.postimg.cc/8cVGPQZm/Collar0.jpg",
   },
   {
@@ -11,6 +12,7 @@ const productos = [
     categoria: "Collar",
     name: "Bainha de Ruffle",
     price: 190,
+    stock: 24,
     foto: "https://i.postimg.cc/DwmwNhHS/Collar1.jpg",
   },
   {
@@ -18,6 +20,7 @@ const productos = [
     categoria: "Collar",
     name: "Regata",
     price: 150,
+    stock: 20,
     foto: "https://i.postimg.cc/bvDfxNMR/Collar1.jpg",
   },
   {
@@ -25,7 +28,7 @@ const productos = [
     categoria: "Collar",
     name: "Luna",
     price: 170,
-    stock: 20,
+    stock: 8,
     foto: "https://i.postimg.cc/qMSPkdgh/Collar3.jpg",
   },
   {
@@ -33,7 +36,7 @@ const productos = [
     categoria: "Collar",
     name: "Vitoria",
     price: 180,
-    stock: 20,
+    stock: 5,
     foto: "https://i.postimg.cc/tTzbTv80/Collar2.jpg",
   },
   {
@@ -41,7 +44,7 @@ const productos = [
     categoria: "Collar",
     name: "Orion",
     price: 150,
-    stock: 20,
+    stock: 10,
     foto: "https://i.postimg.cc/vmdCVLrG/Collar5.jpg",
   },
   {
@@ -49,7 +52,7 @@ const productos = [
     categoria: "Collar",
     name: "Acua",
     price: 140,
-    stock: 20,
+    stock: 12,
     foto: "https://i.postimg.cc/5tqTqYgL/Collar6.jpg",
   },
   {
@@ -57,7 +60,7 @@ const productos = [
     categoria: "Tobillera",
     name: "Valencia",
     price: 170,
-    stock: 20,
+    stock: 15,
     foto: "https://i.postimg.cc/RV6YpbGM/Tobillera0.jpg",
   },
   {
@@ -65,7 +68,7 @@ const productos = [
     categoria: "Tobillera",
     name: "Milanie",
     price: 140,
-    stock: 20,
+    stock: 10,
     foto: "https://i.postimg.cc/8P202BnL/Tobillera1.jpg",
   },
   {
@@ -73,7 +76,7 @@ const productos = [
     categoria: "Tobillera",
     name: "Vermela",
     price: 140,
-    stock: 20,
+    stock: 8,
     foto: "https://i.postimg.cc/CxbQSBWX/Tobillera2.jpg",
   },
 ];

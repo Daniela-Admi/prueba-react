@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ItemDetail from "../Componentes/ItemDetail/IntemDetail";
-import { getFetch } from "../Helpers/gFetch";
+import ItemDetail from "../../Componentes/ItemDetail/ItemDetail";
+import { getFetch } from "../../Helpers/gFetch";
 
 const ItemDetailContainer = () => {
   const [prodDetail, setProdDetail] = useState({});
@@ -11,9 +11,10 @@ const ItemDetailContainer = () => {
       .catch((error) => console.log(error));
   }, []);
   console.log(prodDetail);
-  return;
-  <div>
-    <ItemDetail prodDetail={prodDetail} />
-  </div>;
+  return (
+    <div>
+      <ItemDetail prodDetail={prodDetail} />
+    </div>
+  );
 };
 export default ItemDetailContainer;

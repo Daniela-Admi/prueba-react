@@ -1,7 +1,11 @@
 import React from "react";
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({ prodDetail }) => {
-  const { foto, name, price, categoria } = prodDetail;
+  const { foto, name, price, categoria, stock } = prodDetail;
+  const onAdd = (cant) => {
+    console.log(cant);
+  };
   return (
     <div>
       <h3>Detalles del Producto</h3>
@@ -9,6 +13,8 @@ const ItemDetail = ({ prodDetail }) => {
       <p>{name}</p>
       <p>{price}</p>
       <p>{categoria}</p>
+
+      <ItemCount initial={1} stock={stock} onAdd={onAdd} />
     </div>
   );
 };

@@ -1,17 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import ItemCount from "../Componentes/ItemCount/ItemCount";
-import { getFetch } from "../Helpers/gFetch";
 import ItemList from "../Componentes/ItemList/ItemList";
+import { getFetch } from "../Helpers/gFetch";
 
 function ItemListContiner({ saludo }) {
   const [bool, setBool] = useState(true);
   const [loading, setLoading] = useState(true);
   const [prods, setProds] = useState([]);
-
-  const onAdd = (cant) => {
-    console.log(cant);
-  };
 
   useEffect(() => {
     getFetch //simulacion de llamada a api
@@ -21,14 +16,8 @@ function ItemListContiner({ saludo }) {
   }, []);
 
   //console.log(prods);
-  return (
-    <>
-      <ItemList prods={prods} onAdd={onAdd} />
-      <button onClick={() => setBool(!bool)}>Click</button>
-      <h3>Contador</h3>
-      <ItemCount initial={1} stock={10} onAdd={onAdd} />
-    </>
-  );
+  <p>{saludo}</p>;
+  return <>{loading ? <p>Cargando.. </p> : <ItemList prods={prods} />}</>;
 }
 
 export default ItemListContiner;

@@ -15,12 +15,12 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link href="#features">Novedades</Nav.Link>
             <Nav.Link href="#pricing">Promociones</Nav.Link>
-            <NavDropdown title="Ropa" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Vestidos</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Blusas</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Pantalones</NavDropdown.Item>
+            <NavDropdown title="Accesorios" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Aros</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Collares</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Tobilleras</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Accesorios</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Otros</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>

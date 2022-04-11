@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+//import { getFirestore } from "../../firebase";
+
+// useEffect(() => {
+//   setLoading(true);
+//   const db = getFirestore();
+//   const itemCollection = db.collection("items");
+//   itemCollection
+//     .get()
+//     .then((querySnapshot) => {
+//       if (querySnapshot.size === 0) {
+//         console.log("No results!");
+//       }
+//       setItems(querySnapshot.doc.map((doc) => doc.data()));
+//     })
+//     .catch((error) => {
+//       console.log("Error searching items", error);
+//     })
+//     .finally(() => {
+//       setLoading(false);
+//     });
+// }, []);
 
 ReactDOM.render(
   <React.StrictMode>
