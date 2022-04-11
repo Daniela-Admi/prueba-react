@@ -4,30 +4,31 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar/";
 import Widget from "../Widget/Widget";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">HER SHOP</Navbar.Brand>
+        <Link to="/">HER SHOP</Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Novedades</Nav.Link>
-            <Nav.Link href="#pricing">Promociones</Nav.Link>
+            <Link to="/">Novedades</Link>
+            <Link to="/">Promociones</Link>
             <NavDropdown title="Accesorios" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Aros</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Collares</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Tobilleras</NavDropdown.Item>
+              <Link to="/">Aros</Link>
+              <Link to="/">Collares</Link>
+              <Link to="/">Tobilleras</Link>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Otros</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4"></NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Registrate</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            <Link to="/">Registrate</Link>
+            <Link to="/>Cart">
               <Widget />
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
